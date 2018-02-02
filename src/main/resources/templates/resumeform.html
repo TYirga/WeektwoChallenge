@@ -19,10 +19,17 @@
     Education: <textArea rows="3" th:field="*{education}" /><br />
     <span th:if="${#fields.hasErrors('education')}"
           th:errors="*{education}"></span><br />
+    Education: <textArea rows="3" th:field="*{education2}" /><br />
+    Education: <textArea rows="3" th:field="*{education3}" /><br />
     Experiance: <textArea rows="3" th:field="*{experiance}" /><br />
     <span th:if="${#fields.hasErrors('experiance')}"
           th:errors="*{experiance}"></span><br />
-    Rating: <textArea rows="3" th:field="*{skills}" /><br />
+    Experiance: <textArea rows="3" th:field="*{experiance2}" /><br />
+    Experiance: <textArea rows="3" th:field="*{experiance3}" /><br />
+
+    Rating: <textArea rows="3" th:field="*{skills3}" /><br />
+    Rating: <textArea rows="3" th:field="*{skills3}" /><br />
+    Rating: <textArea rows="3" th:field="*{skills3}" /><br />
     <span th:if="${#fields.hasErrors('skills')}"
           th:errors="*{skills}"></span><br />
     <input type="submit" value="Submit" />
