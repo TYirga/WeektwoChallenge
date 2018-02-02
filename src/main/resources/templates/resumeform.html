@@ -13,25 +13,27 @@
           th:errors="*{firstname}"></span><br />
 
     Last Name: <input type="text" th:field="*{lastname}" /><br />
-
+    <span th:if="${#fields.hasErrors('lastname')}"
+          th:errors="*{lastname}"></span><br />
     Email: <input type="text" th:field="*{email}" /><br />
-
-    Education: <textArea rows="3" th:field="*{education}" /><br />
+    <span th:if="${#fields.hasErrors('email')}"
+          th:errors="*{email}"></span><br />
+    Education: <br /><textArea rows="4" th:field="*{education}" /><br />
     <span th:if="${#fields.hasErrors('education')}"
           th:errors="*{education}"></span><br />
-    Education: <textArea rows="3" th:field="*{education2}" /><br />
-    Education: <textArea rows="3" th:field="*{education3}" /><br />
-    Experiance: <textArea rows="3" th:field="*{experiance}" /><br />
+    <textArea rows="4" th:field="*{education2}" /><br />
+     <textArea rows="4" th:field="*{education3}" /><br />
+    Experiance: <br /><textArea rows="3" th:field="*{experiance}" /><br />
     <span th:if="${#fields.hasErrors('experiance')}"
           th:errors="*{experiance}"></span><br />
-    Experiance: <textArea rows="3" th:field="*{experiance2}" /><br />
-    Experiance: <textArea rows="3" th:field="*{experiance3}" /><br />
-
-    Rating: <textArea rows="3" th:field="*{skills3}" /><br />
-    Rating: <textArea rows="3" th:field="*{skills3}" /><br />
-    Rating: <textArea rows="3" th:field="*{skills3}" /><br />
+    <textArea rows="4" th:field="*{experiance2}" /><br />
+     <textArea rows="4" th:field="*{experiance3}" /><br />
+    Rating: <br /><textArea rows="4" th:field="*{skills}" /><br />
     <span th:if="${#fields.hasErrors('skills')}"
           th:errors="*{skills}"></span><br />
+
+    <textArea rows="4" th:field="*{skil}" /><br />
+    <textArea rows="4" th:field="*{skills3}" /><br />
     <input type="submit" value="Submit" />
 </form>
 </body>

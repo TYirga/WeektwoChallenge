@@ -10,24 +10,32 @@ import javax.validation.constraints.Size;
 public class Resume {
 
     private long id;
-
+    @Size(min=1)
     private String lastname;
 
-
+    @Size(min=1)
     private String firstname;
 
-
-    @Size(min=7, max=100)
+    private String skil;
+    @Size(min=6, max=1000)
     private String education;
 
-private String education2;
-private String education3;
+    public String getSkil() {
+        return skil;
+    }
+
+    public void setSkil(String skil) {
+        this.skil = skil;
+    }
+
+    private String education2;
+    private String education3;
+@Size(min=4)
     private String email;
 
-    @Size(min=7, max=100)
+    @Size(min=5, max=100)
     private String skills;
-private String skiills2;
-private String skills3;
+    private String skills3;
     @Size(min=7, max=500)
     private String experiance;
 private String experiance2;
@@ -104,13 +112,6 @@ private String experiance3;
         this.education3 = education3;
     }
 
-    public String getSkiills2() {
-        return skiills2;
-    }
-
-    public void setSkiills2(String skiills2) {
-        this.skiills2 = skiills2;
-    }
 
     public String getSkills3() {
         return skills3;
