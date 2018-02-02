@@ -18,22 +18,22 @@
     Email: <input type="text" th:field="*{email}" /><br />
     <span th:if="${#fields.hasErrors('email')}"
           th:errors="*{email}"></span><br />
-    Education: <br /><textArea rows="4" th:field="*{education}" /><br />
-    <span th:if="${#fields.hasErrors('education')}"
-          th:errors="*{education}"></span><br />
-    <textArea rows="4" th:field="*{education2}" /><br />
-     <textArea rows="4" th:field="*{education3}" /><br />
-    Experiance: <br /><textArea rows="3" th:field="*{experiance}" /><br />
-    <span th:if="${#fields.hasErrors('experiance')}"
-          th:errors="*{experiance}"></span><br />
-    <textArea rows="4" th:field="*{experiance2}" /><br />
-     <textArea rows="4" th:field="*{experiance3}" /><br />
-    Rating: <br /><textArea rows="4" th:field="*{skills}" /><br />
-    <span th:if="${#fields.hasErrors('skills')}"
-          th:errors="*{skills}"></span><br />
+    Education: <br />
+Education Level: <input type="text" th:field="*{educationLevel}" /><br />
+  Major:  <input type="text" th:field="*{major}" /><br />
+   UniversityName: <input type="text" th:field="*{universityName}" /><br />
 
-    <textArea rows="4" th:field="*{skil}" /><br />
-    <textArea rows="4" th:field="*{skills3}" /><br />
+   Graduation Year: <input type="text" th:field="*{graduatedYear}" /><br />
+
+    Experiance: <br />
+    Position:  <input type="text" th:field="*{position}" /><br />
+    CompanyName:<input type="text" th:field="*{companyName}" /><br />
+    StartingDate:<input type="text" th:field="*{startingDate}" /><br />
+    EndingDate: <input type="text" th:field="*{endingDate}" /><br />
+    Duties:<input type="text" th:field="*{duties}" /><br />
+Skill's Name:<input type="text" th:field="*{skillsName}" /><br />
+    Skill's Rating:<input type="text" th:field="*{rating}" /><br />
+
     <input type="submit" value="Submit" />
 </form>
 </body>

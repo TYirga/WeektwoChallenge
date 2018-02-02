@@ -8,18 +8,16 @@
 <p th:inline="text">[[${resume.firstname}]] [[${resume.lastname}]].<br />
     [[${resume.email}]].<br />
     Education.<br />
-    [[${resume.education}]]<br />
-    [[${resume.education2}]]<br />
-    [[${resume.education3}]]<br />
-    Experiance<br />
-    [[${resume.experiance}]]<br />
-    [[${resume.experiance2}]]<br />
-    [[${resume.experiance3}]]<br />
-    Rating.<br />
-    [[${resume.skills}]]<br />
-    [[${resume.skil}]]<br />
+    [[${resume.educationLevel}]] in [[${resume.major}]] <br />
+    [[${resume.universityName}]],[[${resume.graduatedYear}]] <br />
 
-    [[${resume.skills3}]]<br />
+    Experiance<br />
+    [[${resume.position}]]<br />
+    [[${resume.companyName}]], [[${resume.startingDate}]]-[[${resume.endingDate}]]<br />
+    Duties:[[${resume.duties}]]<br />
+
+    Skills<br />
+    [[${resume.skillsName}]], [[${resume.rating}]]<br />
 </p>
 </body>
 </html>

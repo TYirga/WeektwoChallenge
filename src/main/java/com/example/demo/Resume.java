@@ -11,6 +11,7 @@ public class Resume {
 
     private long id;
     @Size(min=1)
+
     private String lastname;
 
     @Size(min=1)
@@ -18,8 +19,38 @@ public class Resume {
 
     private String skil;
     @Size(min=6, max=1000)
+    //VARIABLES FOR EDUCATION
     private String education;
+private String major;
+private String universityName;
+private String graduatedYear;
+private String educationLevel;
+//VARIABLES FOR EXPERIANCE
+    String position;
+    String companyName;
+    String startingDate;
+    String endingDate;
+    String duties;
 
+    public String getSkillsName() {
+        return skillsName;
+    }
+
+    public void setSkillsName(String skillsName) {
+        this.skillsName = skillsName;
+    }
+
+    public String getRating() {
+        return rating;
+    }
+
+    public void setRating(String rating) {
+        this.rating = rating;
+    }
+
+    //Variables for experiance
+    String skillsName;
+    String rating;
     public String getSkil() {
         return skil;
     }
@@ -30,7 +61,7 @@ public class Resume {
 
     private String education2;
     private String education3;
-@Size(min=4)
+    @Size(min=4)
     private String email;
 
     @Size(min=5, max=100)
@@ -38,8 +69,8 @@ public class Resume {
     private String skills3;
     @Size(min=7, max=500)
     private String experiance;
-private String experiance2;
-private String experiance3;
+    private String experiance2;
+    private String experiance3;
     public long getId() {
         return id;
     }
@@ -135,5 +166,77 @@ private String experiance3;
 
     public void setExperiance3(String experiance3) {
         this.experiance3 = experiance3;
+    }
+
+    public String getMajor() {
+        return major;
+    }
+
+    public void setMajor(String major) {
+        this.major = major;
+    }
+
+    public String getUniversityName() {
+        return universityName;
+    }
+
+    public void setUniversityName(String universityName) {
+        this.universityName = universityName;
+    }
+
+    public String getGraduatedYear() {
+        return graduatedYear;
+    }
+
+    public void setGraduatedYear(String graduatedYear) {
+        this.graduatedYear = graduatedYear;
+    }
+
+    public String getEducationLevel() {
+        return educationLevel;
+    }
+
+    public void setEducationLevel(String educationLevel) {
+        this.educationLevel = educationLevel;
+    }
+
+    public String getPosition() {
+        return position;
+    }
+
+    public void setPosition(String position) {
+        this.position = position;
+    }
+
+    public String getCompanyName() {
+        return companyName;
+    }
+
+    public void setCompanyName(String companyName) {
+        this.companyName = companyName;
+    }
+
+    public String getStartingDate() {
+        return startingDate;
+    }
+
+    public void setStartingDate(String startingDate) {
+        this.startingDate = startingDate;
+    }
+
+    public String getEndingDate() {
+        return endingDate;
+    }
+
+    public void setEndingDate(String endingDate) {
+        this.endingDate = endingDate;
+    }
+
+    public String getDuties() {
+        return duties;
+    }
+
+    public void setDuties(String duties) {
+        this.duties = duties;
     }
 }
